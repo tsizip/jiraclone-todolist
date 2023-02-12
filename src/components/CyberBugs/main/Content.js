@@ -132,8 +132,11 @@ export default function Content(props) {
 
      }
      return (
-          <div className="content" style={{ display: 'flex' }}>
+          <div className="content" >
+               <p>(project chưa hoàn thiện lắm vì em tổ chức API hơi rối, anh/chị test vui lòng reload lại trang sau mỗi lần thực hiện thay đổi dữ liệu!)</p>
+               <div style={{display:'flex'}}>
                {renderListTask()}
+               </div>
           </div>
 
      )

@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { TOKEN, USER_LOGIN } from '../../util/constant/SettingSystem'
 import './Nav.css'
 
 export default function NavBar() {
@@ -33,14 +34,22 @@ export default function NavBar() {
                                         <NavLink style={({ isActive }) => { return isActive ? activeStyle : undefined }} className="nav-link" to="/dragdrop">Drag Drop Demo</NavLink>
                                    </li> */}
                                    <li className="nav-item dropdown">
-                                        <NavLink style={({ isActive }) => { return isActive ? activeStyle : undefined }} className="nav-link" to="/login">Login</NavLink>
-                                   </li> 
+                                        {localStorage.getItem(USER_LOGIN) ? <NavLink style={({ isActive }) => { return isActive ? activeStyle : undefined }} className="nav-link" to="/login" onClick={() => {
+                                             localStorage.removeItem(USER_LOGIN)
+                                             localStorage.removeItem(TOKEN)
+                                        }}>Logout</NavLink> : <NavLink style={({ isActive }) => { return isActive ? activeStyle : undefined }} className="nav-link" to="/login">Login</NavLink>}
+
+
+                                   </li>
+                                   <li className="nav-item dropdown">
+                                        <NavLink style={({ isActive }) => { return isActive ? activeStyle : undefined }} className="nav-link" to="/projectmanagement">Jira Clone</NavLink>
+                                   </li>
                                    <li className="nav-item dropdown">
                                         <NavLink style={({ isActive }) => { return isActive ? activeStyle : undefined }} className="nav-link" to="/dragdroplib">Drag Drop Demo Lib</NavLink>
                                    </li>
 
                                    <li className="nav-item dropdown">
-                                   <NavLink style={({ isActive }) => { return isActive ? { color: 'black' } : undefined }} className="nav-link dropdown-item" to="/todolistredux">Todolist Redux</NavLink>
+                                        <NavLink style={({ isActive }) => { return isActive ? { color: 'black' } : undefined }} className="nav-link dropdown-item" to="/todolistredux">Todolist Redux</NavLink>
                                    </li>
 
                                    {/* <li className="nav-item dropdown">

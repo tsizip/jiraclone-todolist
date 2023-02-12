@@ -14,6 +14,10 @@ function *createProjectAuthor (action){
 
      try {
           let {data, status} = yield call(()=>{return cyberbugsService.createProjectAuthor(action.newProject)})
+
+          if(status === 200){
+               yield alert('Add project complete!')
+          }
           // yield console.log('them thanh cong!')
           // yield console.log('data', data)
           // yield localStorage.setItem(JSON.stringify('dataProject', ))
