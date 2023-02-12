@@ -6,19 +6,19 @@ import reportWebVitals from './reportWebVitals';
 // setup redux
 import { Provider } from 'react-redux';
 import store from './redux/configStore'
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 // import 'antd/dist/reset.css' 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <HashRouter>
     <Provider store={store}>
       {/* <BrowserRouter> */}
       <App />
       {/* </BrowserRouter> */}
     </Provider>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
