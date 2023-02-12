@@ -47,14 +47,14 @@ export default function SideBar() {
                          defaultSelectedKeys={['1']}
                          
                          items={[
+                              // {
+                              //      key: '1',
+                              //      icon: <FileSearchOutlined />,
+                              //      label: 'Search issue',
+                                   
+                              // },
                               {
                                    key: '1',
-                                   icon: <FileSearchOutlined />,
-                                   label: 'Search issue',
-                                   
-                              },
-                              {
-                                   key: '2',
                                    icon: <PlusSquareOutlined />,
                                    label: 'Create issue',
                                    onClick:()=>{

@@ -281,7 +281,7 @@ export default function ProjectManagementComponent(props) {
      return (
           <div>
                {/* <h3>Project Management</h3> */}
-               <Table key={1} columns={columns} dataSource={data} onChange={onChange} />
+               <Table key={1} columns={columns} dataSource={data} onChange={onChange}  size="small" />
           </div>
      )
 }

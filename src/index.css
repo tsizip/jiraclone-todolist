@@ -179,6 +179,7 @@
 
 .main {
   padding-left: 2%;
+  /* padding: 0; */
 }
 .main .header .breadcrumb {
   margin-bottom: 0;

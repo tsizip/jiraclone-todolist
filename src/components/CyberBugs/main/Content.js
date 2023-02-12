@@ -59,7 +59,7 @@ export default function Content(props) {
                                         ref={provided.innerRef}
                                         {...provided.droppableProps}
                                         key={indexCard}
-                                        className="card pb-2" style={{ width: '17rem', height: 'auto' }}>
+                                        className="card pb-2" style={{ width: '15rem', height: 'auto' }}>
                                         <div className="card-header">
                                              {task.statusName}
                                         </div>

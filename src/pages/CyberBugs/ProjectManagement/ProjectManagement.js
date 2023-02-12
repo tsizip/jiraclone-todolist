@@ -11,7 +11,7 @@ export default function ProjectManagement() {
           <div className='jira'>
                <SideBar />
                <Menu />
-               <div className='main container  pb-5'>
+               <div className='main container  '>
                     <ProjectManagementComponent />
                </div>
 

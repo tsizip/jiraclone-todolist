@@ -11,10 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+/* body{
+  font-size: 13px;
+} */
 .jira {
   height: 100vh;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  /* font-size: 13px; */
   display: flex;
 }
 

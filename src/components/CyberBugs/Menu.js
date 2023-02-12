@@ -43,23 +43,23 @@ export default function Menu() {
 
                </div>
                <div className="feature">
-                    <div>
+                    <div style={{cursor:'no-drop'}}>
                          <i className="fa fa-truck " />
                          <span>Releases</span>
                     </div>
-                    <div>
+                    <div style={{cursor:'no-drop'}}>
                          <i className="fa fa-equals " />
                          <span>Issues and filters</span>
                     </div>
-                    <div>
+                    <div style={{cursor:'no-drop'}}>
                          <i className="fa fa-paste " />
                          <span>Pages</span>
                     </div>
-                    <div>
+                    <div style={{cursor:'no-drop'}}>
                          <i className="fa fa-location-arrow " />
                          <span>Reports</span>
                     </div>
-                    <div>
+                    <div style={{cursor:'no-drop'}}>
                          <i className="fa fa-box " />
                          <span>Components</span>
                     </div>

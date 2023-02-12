@@ -45,7 +45,7 @@ function CreateProjCyberBugComponent(props) {
 
      } = props;
      return (
-          <div className='container mt-5 pb-5'>
+          <div className='container mt-2 pb-5'>
                <h3>Create Project</h3>
                <form onSubmit={handleSubmit} onChange={handleChange} className=''>
                     <div className='form-group'>
@@ -63,7 +63,7 @@ function CreateProjCyberBugComponent(props) {
                               onInit={(evt, editor) => editorRef.current = editor}
                               // initialValue="<p>This is the initial content of the editor.</p>"
                               init={{
-                                   height: 500,
+                                   height: 300,
                                    menubar: false,
                                    plugins: [
                                         'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
@@ -117,10 +117,12 @@ const CreateProjectCategoryCyberBugsWithFomik = withFormik({
          
      }),
      // values = {email, password}
-     handleSubmit: (value, { setSubmitting, props }) => {
+     handleSubmit:  (value, { setSubmitting, props }) => {
      //    console.log('propsvalue', props)
-          props.dispatch(createProjectAuthorAction(value))
+           props.dispatch(createProjectAuthorAction(value))
           // props.dispatch(getAllProjectManaAction())
+          // alert('complete!')
+
      },
 
      displayName: 'Create Project CyberBugs',
