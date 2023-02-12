@@ -7,7 +7,7 @@ import NavBar from "./components/home/NavBar";
 import Loading from "./components/loading/Loading";
 import Login from "./components/Login/Login";
 import About from "./pages/about/About";
-import BaiTapToDoListSaga from "./pages/BaiTapToDoListSaga/BaiTapToDoListSaga";
+// import BaiTapToDoListSaga from "./pages/BaiTapToDoListSaga/BaiTapToDoListSaga";
 import Contact from "./pages/contact/Contact";
 import Home from "./pages/home/Home";
 import Pnf from "./pages/Pnf";
@@ -92,7 +92,7 @@ function App() {
           <Route path="/todolistrfc" element={<TodolistRFC />} />
           <Route path="/todolistrcc" element={<Todolist />} />
           <Route path="/todolistredux" element={<ToDoListRedux />} />
-          <Route path="/todolistsaga" element={<BaiTapToDoListSaga />} />
+          {/* <Route path="/todolistsaga" element={<BaiTapToDoListSaga />} /> */}
           <Route path="/demohocmodal" element={<DemoHOCModal />} />
           
           {/* <Route path="/loading" element={<Loading />} /> */}
