@@ -480,3 +480,7 @@ code {
   font-size: 14px;
 }
 
+.ant-pagination-options {
+  margin-inline-start: 2px;
+  display: none;
+}
